@@ -1,0 +1,147 @@
+#
+# An unexpected error has been detected by HotSpot Virtual Machine:
+#
+#  Internal Error (4A41564123414C4C530E4350500018), pid=7232, tid=6520
+#
+# Java VM: Java HotSpot(TM) Client VM (1.5.0_12-b04 mixed mode)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00aa71a8):  JavaThread "CompilerThread0" daemon [_thread_in_vm, id=6520]
+
+Stack: [0x02be0000,0x02c20000),  sp=0x02c1f56c,  free space=253k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x124b07]
+V  [jvm.dll+0x639da]
+V  [jvm.dll+0x86f75]
+V  [jvm.dll+0x8755f]
+V  [jvm.dll+0xdfbb2]
+V  [jvm.dll+0x8746a]
+V  [jvm.dll+0x8e006]
+C  [awt.dll+0xb29aa]
+V  [jvm.dll+0x18d3]
+V  [jvm.dll+0x1e68a]
+V  [jvm.dll+0x1e5d6]
+V  [jvm.dll+0x21d79]
+V  [jvm.dll+0x21f86]
+V  [jvm.dll+0x22453]
+V  [jvm.dll+0x1a738]
+V  [jvm.dll+0x1a970]
+V  [jvm.dll+0x1afc7]
+V  [jvm.dll+0x57a43]
+V  [jvm.dll+0x57768]
+V  [jvm.dll+0x1110d8]
+V  [jvm.dll+0x1110a6]
+C  [MSVCRT.dll+0x27fb8]
+C  [kernel32.dll+0x202ed]
+
+
+Current CompileTask:
+HotSpot Client Compiler: 28  !b  sun.nio.cs.ext.DoubleByteEncoder.encodeArrayLoop(Ljava/nio/CharBuffer;Ljava/nio/ByteBuffer;)Ljava/nio/charset/CoderResult; (608 bytes)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x02cff020 JavaThread "AWT-EventQueue-0" [_thread_blocked, id=8152]
+  0x003b5cd8 JavaThread "DestroyJavaVM" [_thread_blocked, id=7384]
+  0x02ce3160 JavaThread "AWT-EventQueue-0" [_thread_blocked, id=8148]
+  0x02ce0598 JavaThread "Thread-3" [_thread_blocked, id=8044]
+  0x02cf1cf8 JavaThread "Java Sound Event Dispatcher" daemon [_thread_blocked, id=7828]
+  0x02ce51d8 JavaThread "Audio Player" daemon [_thread_blocked, id=7836]
+  0x02cd54a8 JavaThread "AWT-Windows" daemon [_thread_in_native, id=7780]
+  0x02cd50d0 JavaThread "AWT-Shutdown" [_thread_blocked, id=5248]
+  0x02cb8a58 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=6536]
+  0x00aa85a8 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=6200]
+=>0x00aa71a8 JavaThread "CompilerThread0" daemon [_thread_in_vm, id=6520]
+  0x00aa65f8 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=7908]
+  0x00a99720 JavaThread "Finalizer" daemon [_thread_blocked, id=7920]
+  0x00a982b0 JavaThread "Reference Handler" daemon [_thread_blocked, id=7916]
+
+Other Threads:
+  0x00a94070 VMThread [id=7912]
+  0x00aa97f0 WatcherThread [id=8052]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ def new generation   total 576K, used 43K [0x22a50000, 0x22af0000, 0x22f30000)
+  eden space 512K,   8% used [0x22a50000, 0x22a5ac98, 0x22ad0000)
+  from space 64K,   0% used [0x22ad0000, 0x22ad0000, 0x22ae0000)
+  to   space 64K,   0% used [0x22ae0000, 0x22ae0000, 0x22af0000)
+ tenured generation   total 1408K, used 381K [0x22f30000, 0x23090000, 0x26a50000)
+   the space 1408K,  27% used [0x22f30000, 0x22f8f478, 0x22f8f600, 0x23090000)
+ compacting perm gen  total 8192K, used 5181K [0x26a50000, 0x27250000, 0x2aa50000)
+   the space 8192K,  63% used [0x26a50000, 0x26f5f668, 0x26f5f800, 0x27250000)
+No shared spaces configured.
+
+Dynamic libraries:
+0x00400000 - 0x00413000 	C:\Program Files\Java\jre1.5.0_12\bin\javaw.exe
+0x77f50000 - 0x77ff9000 	C:\WINDOWS\System32\ntdll.dll
+0x77e20000 - 0x77f3f000 	C:\WINDOWS\system32\kernel32.dll
+0x77d80000 - 0x77e18000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x78000000 - 0x7806e000 	C:\WINDOWS\system32\RPCRT4.dll
+0x77cf0000 - 0x77d7d000 	C:\WINDOWS\system32\USER32.dll
+0x77c20000 - 0x77c60000 	C:\WINDOWS\system32\GDI32.dll
+0x77bc0000 - 0x77c13000 	C:\WINDOWS\system32\MSVCRT.dll
+0x762e0000 - 0x762fa000 	C:\WINDOWS\System32\IMM32.DLL
+0x62340000 - 0x62348000 	C:\WINDOWS\System32\LPK.DLL
+0x72ef0000 - 0x72f4a000 	C:\WINDOWS\System32\USP10.dll
+0x6d640000 - 0x6d7dd000 	C:\Program Files\Java\jre1.5.0_12\bin\client\jvm.dll
+0x76af0000 - 0x76b1c000 	C:\WINDOWS\System32\WINMM.dll
+0x6d290000 - 0x6d298000 	C:\Program Files\Java\jre1.5.0_12\bin\hpi.dll
+0x76ba0000 - 0x76bab000 	C:\WINDOWS\System32\PSAPI.DLL
+0x6d610000 - 0x6d61c000 	C:\Program Files\Java\jre1.5.0_12\bin\verify.dll
+0x6d310000 - 0x6d32d000 	C:\Program Files\Java\jre1.5.0_12\bin\java.dll
+0x6d630000 - 0x6d63f000 	C:\Program Files\Java\jre1.5.0_12\bin\zip.dll
+0x6d000000 - 0x6d16a000 	C:\Program Files\Java\jre1.5.0_12\bin\awt.dll
+0x72f50000 - 0x72f73000 	C:\WINDOWS\System32\WINSPOOL.DRV
+0x77160000 - 0x77270000 	C:\WINDOWS\system32\ole32.dll
+0x5a480000 - 0x5a4b4000 	C:\WINDOWS\system32\uxtheme.dll
+0x51000000 - 0x51050000 	C:\WINDOWS\System32\ddraw.dll
+0x73b10000 - 0x73b16000 	C:\WINDOWS\System32\DCIMAN32.dll
+0x6d240000 - 0x6d290000 	C:\Program Files\Java\jre1.5.0_12\bin\fontmanager.dll
+0x74660000 - 0x746ab000 	C:\WINDOWS\System32\MSCTF.dll
+0x3a700000 - 0x3a718000 	C:\WINDOWS\System32\imekr61.ime
+0x77380000 - 0x77b74000 	C:\WINDOWS\system32\SHELL32.dll
+0x77280000 - 0x772e3000 	C:\WINDOWS\system32\SHLWAPI.dll
+0x772f0000 - 0x7737b000 	C:\WINDOWS\system32\COMCTL32.dll
+0x71950000 - 0x71a34000 	C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_x-ww_1382d70a\comctl32.dll
+0x6d480000 - 0x6d4a5000 	C:\Program Files\Java\jre1.5.0_12\bin\jsound.dll
+0x6d4b0000 - 0x6d4b8000 	C:\Program Files\Java\jre1.5.0_12\bin\jsoundds.dll
+0x51080000 - 0x510e1000 	C:\WINDOWS\System32\DSOUND.dll
+0x77bb0000 - 0x77bb7000 	C:\WINDOWS\system32\VERSION.dll
+0x72c70000 - 0x72c79000 	C:\WINDOWS\System32\wdmaud.drv
+0x72c60000 - 0x72c68000 	C:\WINDOWS\System32\msacm32.drv
+0x77b90000 - 0x77ba4000 	C:\WINDOWS\System32\MSACM32.dll
+0x77b80000 - 0x77b87000 	C:\WINDOWS\System32\midimap.dll
+0x5ef80000 - 0x5ef84000 	C:\WINDOWS\System32\KsUser.dll
+0x03390000 - 0x033a2000 	C:\Program Files\PCFree\Modules\PCFreeSE.dll
+0x770d0000 - 0x7715b000 	C:\WINDOWS\system32\oleaut32.dll
+
+VM Arguments:
+java_command: Sutda
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\JAVA\jdk1.5\
+CLASSPATH=.;C:\JAVA\jdk1.5\\lib;C:\Program Files\Java\jre1.5.0_12\lib;$JAVA_HOME$\jre\lib\ext;
+PATH=C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\ESTsoft\ALZip;C:\JAVA\jdk1.5\\bin;C:\Program Files\ESTsoft\ALZip
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 15 Model 2 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows XP Build 2600 
+
+CPU:total 1 (cores per cpu 1, threads per core 1) family 15 model 2 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2
+
+Memory: 4k page, physical 523760k(40740k free), swap 2066504k(5152k free)
+
+vm_info: Java HotSpot(TM) Client VM (1.5.0_12-b04) for windows-x86, built on May  2 2007 02:07:59 by "java_re" with MS VC++ 6.0
+
