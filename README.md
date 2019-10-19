@@ -1,3 +1,5 @@
-# CNU-2018-Fall_ComputerProgramming2-by.java
-- Computer Science Engineer
+# CNU-2018-Spring-DataStructure
+- ChungNam National University
+- Computer Science Engineering
+- 201502023 MinKi Kim
 - Professor : YoungGuk Kim
